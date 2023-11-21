@@ -1,0 +1,25 @@
+Bitcoin
+1. Introduction:
+Peer-to-peer electronic cash system that allows online payments without the need of a centralized party to trust thanks to cryptographic proof.
+
+2. Transactions and Timestamp server:
+Transactions transfer ownership through a digital hash that is timestamped in a decentralized way and organized into a chain of blocks.
+
+3. Proof-of-Work and Network:
+Integrity of blockchain is ensured by proof-of-work, where modifying blocks is very expensive, and the network relies on the longest valid chain, 
+where blocks acceptance is shown by nodes working on the next block to add to the chain formed from transactions that are broadcasted to every node.
+
+4. Incentive and Reclaiming Disk Space:
+In order for nodes to stay honest and support the network an incentivization mechanism is created so miners can earn coins, and nodes can utilize Merkle-Trees to save disk space,
+because the transactions will be securely recorded.
+
+5. Simplified Payment Verification and Combining/Splitting Value:
+To verify a payment user doesn't have to run a full-node, he can obtain Merkle branch and link it to a place in the chain, to see whether it has accepted it and 
+transactions allow for flexible management of Bitcoin values using Combining and Splitting Values (paying $20 for a tx with two $10 notes).
+
+6. Privacy and Calculations:
+New Privacy Model doesnt require Trusted Third Parties to release the transactions to the public after confirming them, but the flow of information is broken by keeping public keys anonymous and
+the proof-of-work difficulty is adjusted so that its almost impossible for an attacker to catch up.
+
+7. Conclusion:
+Bitcoin provides a decentralized solution for transactions, which doesn't realy on third parties, but solves the double spening problem with the proof-of-work system and a peer-to-peer network of nodes.

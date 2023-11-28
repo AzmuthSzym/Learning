@@ -1,0 +1,15 @@
+Ethereum
+
+History and Bitcoin as a State Transition System:
+The concept of decentralized digital currency has been around for decades and from that point people have been introducing new concepts on top of it, but Bitcoin was the first
+one to be implemented in practice by Satoshi Nakamoto in 2009 and served as a state transition system (for each input in a transaction there can be an error or a change in state).
+
+Mining and Merkle Trees:
+Mining is a process of adding a new block to the already existing chain through the solution of proof-of-work (nodes 'guessing' the correct hash) with some other steps in order to 
+provide a secure solution, while usage of Merkle Trees solves some scalability issues, because the nodes to not require massive amounts of data to be stored in order to proove 
+the validity of a transaction within the blocks.
+
+Alternative Blockchain Applications and Scripting:
+The idea of building applications on top of a blockchain (for btc it can be Namecoin or Colored Coins) has been thought of even before Bitcoin was created, but the Bitcoin network
+itself isn't suitable for this type of endeavour, because of the lack of state, blockchain blindness and lack of turing-completeness. Ethereum aims to provide a framework that
+would solve those issues, bringing ease of development and allowing applications to share blockchain security.

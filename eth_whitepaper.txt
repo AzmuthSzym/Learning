@@ -13,3 +13,66 @@ Alternative Blockchain Applications and Scripting:
 The idea of building applications on top of a blockchain (for btc it can be Namecoin or Colored Coins) has been thought of even before Bitcoin was created, but the Bitcoin network
 itself isn't suitable for this type of endeavour, because of the lack of state, blockchain blindness and lack of turing-completeness. Ethereum aims to provide a framework that
 would solve those issues, bringing ease of development and allowing applications to share blockchain security.
+
+Ethereum - Big paragraph
+Ethereum is a blockchain with Turing-complete programming language, allowing developer to create Smart Contracts, decentralized applications that offer different functions and 
+utilities for everyone participating in the blockchain.
+
+Ethereum Accounts:
+Ethereum's state is made of accounts (20-byte addresses that have few fields) of different types (EOA - externally owned accounts by private key and
+contract accounts controlled by code) and state transitions, which are transfers of value using 'ether' to pay transaction fees.
+
+Messages and Transactions (+ Messages paragraph):
+Message is a signed data packaged that contains information generally expected in any cryptocurrency (Ethereum also has some additional fields included that can be used by EVM
+and anti-denial of service model) and the contracts can also send a message to other contract.
+
+Ethereum State Transition Function and Code Execution:
+Ethereum state transition function has a few different steps on the way of executing transaction on the blockchain and the code on ETH is written in a low-level language (EVM code),
+where code execution is an infinite loop that executes operations (operations have access to the stack, memory and storage as a space to store data).
+
+Blockchain and mining:
+The difference between ETH and BTC is that ETH blocks contain a copy of the transaction list, most recent state, block number and the difficulty, which also make block validation
+algorithm different (special kind of tree known as Patricia tree is used for more efficiency) and code is executed by all nodes that download and validate a block.
+
+Applications - Big paragraph:
+The Ethereum applications can roughly be grouped into three groups - financial apps (money is fully involved), bounty system for solving problems (money is semi-involved) and
+decentralized governance applications which aren't financial.
+
+Token Systems and Financial derivatives/ Stablecoins:
+Using Ethereum blockchain we can implement a banking system using tokens that can represent smart property, coupon or other unconventional value, but other more interesting
+usage for smart contracts is utilizing financial derivatives through data feeds and this allows a trustless process to take place.
+
+Identity/Reputation Systems and Decentralized File Storage:
+Ethereum can be used to create a name registration system that can be used as a authentication method, but also the possibility of storing data on the blockchain allows the
+decentralized file storage system like Dropbox to exist with some additional incentives going around it.
+
+Decentralized Autonomous Organizations and Further Applications:
+Other applications of blockchain which aren't money-centered are Decentralized Autonomous Organizations (DAO), which are virtual entity consisting of members that can vote (importance of a good voting system) on
+proposals (spending funds, code changes to a protocol), but also there can be applications for multisignature escrows, a decentralized data feeds, prediction markets, decentralized marketplaces and more.
+
+Miscellanea and Concerns - Big paragraph
+Modified GHOST Implementation:
+GHOST, which is Greedy Heaviest Observed Subtree, is an addition to eth that helps decentralization and stops production of stale blocks, helping security of the network.
+
+Fees:
+The need for fees in a blockchain is very straightforward, but it comes with a set of incentivization challenges in the market-based approach (BTC approach), which Ethereum solves by a 
+mechanism of limits in the operation block operations (block limit and a long-term exponential moving average).
+
+Computation And Turing-Completeness:
+Ethereum allows any computation to be carried out (even infinite loops and recursions) which creates some problems that are solved by setting maximum number of computational steps
+that transaction is allowed to make (in case of an attack: transactions that didnt finish execution gets reverted, infinite loops will run out of gas sooner or later), which 
+in the end makes Turing-completeness surprisingly easy to manage.
+
+Currency And Issuance:
+Ethereum introduces 'ether' as its native currency with different predefined denominators (wei, szabo, finney, ether) - it serves as a liquidity layer and transaction fee payment, while
+the issuance model creates a linear supply growth and a potential shift to Proof-of-stake model (did happen :D)
+
+Mining Centralization and Scalability:
+The Ethereum network resolved mining centralization by introducing randomness in the form of miners having to fetch random data from the state and compute random transactions,
+reducing the dominance of ASICS, while the scalability issue is addresses by forcing every miner to be a full node and creating a state tree root, so that as long as there is one
+honest node, it can use a 'proof of invalidity' to see that one provided state S[i] does not match the computed S[i].
+
+CONCLUSION:
+In conclusion, the Ethereum protocol is designed as an enchanced cryptocurrency by providing a Turing-complete programming language that enables creation of different smart-contracts
+for various needs (from financial to even social needs), but also providing capabilities to be used as a decentralized file storage, prediction markets and other concepts potentially
+revolutionizing the crypto industry.
